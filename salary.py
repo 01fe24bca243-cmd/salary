@@ -1,12 +1,13 @@
 import sys
-if len(sys.argv) == 3:
-  salary = float(sys.argv[1])
+
+if len(sys.argv) == 2:
+    salary = float(sys.argv[1])
 else:
-  print("no salary provided.using default salary")
-  salary = 50000
+    print("No salary provided. Using default salary...")
+    salary = 50000   # default salary
 
 bonus = salary * 0.10
-total = salary + bonus 
+total = salary + bonus
 
-print("bonus amount:",bonus)
-print("total salary:",total)
+print("Bonus Amount:", bonus)
+print("Total Salary:", total)
